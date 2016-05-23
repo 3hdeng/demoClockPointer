@@ -11,4 +11,13 @@ injectTapEventPlugin();
 
 // Render the main app react component into the app div.
 // For more details see: https://facebook.github.io/react/docs/top-level-api.html#react.render
-ReactDOM.render(<ClockPointer hasSelected={true} type='hour'value={6}  mystyle={{accColor:'cyan',textColor:'red'}}  />, document.getElementById('app'));
+ReactDOM.render(<div>
+<ClockPointer hasSelected={true}
+type='hour'value={1}  mystyle={{accColor:'cyan',textColor:'red'}}  />
+<ClockPointer value={4} />
+<ClockPointer value={6} />
+<ClockPointer value={8} />
+<ClockPointer value={10} />
+<ClockPointer value={11} />
+</div>
+, document.getElementById('app'));

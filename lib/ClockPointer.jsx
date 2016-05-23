@@ -18,7 +18,7 @@ function getStyles(props, context, state) {
     const styles = {
         rod: {
             height: '40%',
-            background: {accColor},
+            background: `${accColor}`,
             width: 2,
             left: 'calc(50% - 1px)',
             position: 'absolute',
@@ -28,9 +28,9 @@ function getStyles(props, context, state) {
             transform: `rotateZ(${angle}deg)`,
         },
         mark: {
-            background: {textColor},
-            border: `4px solid {accColor}`,
-            display: hasSelected && 'none',
+            background:`${textColor}`,
+            border: `4px solid ${accColor}`,
+            display: 'block',
             width: 7,
             height: 7,
             position: 'absolute',
@@ -103,8 +103,9 @@ ClockPointer.PropTypes= {
 
 ClockPointer.defaultProps = {
     value: null,
-    type: 'minute',
+    type: 'hour',
     hasSelected: false,
+    mystyle:{accColor:'blue', textColor:'green'}
 };
 
 export default ClockPointer;
