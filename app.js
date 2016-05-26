@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import ClockPointer from './lib/ClockPointer'; // Our custom react component
+import BorderRadius from './lib/BorderRadius';
+
 
 //Needed for onTouchTap
 //Can go away when react 1.0 release
@@ -19,5 +21,6 @@ type='hour'value={1}  mystyle={{accColor:'cyan',textColor:'red'}}  />
 <ClockPointer value={8} />
 <ClockPointer value={10} />
 <ClockPointer value={11} />
+<BorderRadius  mystyle={{accColor:'red',textColor:'green'}}  />
 </div>
 , document.getElementById('app'));
